@@ -1,0 +1,80 @@
+"use strict";
+
+const MONTHS = [
+  {
+    language: "english",
+    code: "en",
+    months: [
+      "january",
+      "february",
+      "march",
+      "april",
+      "may",
+      "june",
+      "july",
+      "august",
+      "september",
+      "october",
+      "november",
+      "december",
+    ],
+  },
+  {
+    language: "spanish",
+    code: "es",
+    months: [
+      "enero",
+      "febrero",
+      "marzo",
+      "abril",
+      "mayo",
+      "junio",
+      "julio",
+      "agosto",
+      "septiembre",
+      "octubre",
+      "noviembre",
+      "diciembre",
+    ],
+  },
+  {
+    language: "german",
+    code: "de",
+    months: [
+      "januar",
+      "februar",
+      "märz",
+      "april",
+      "mai",
+      "juni",
+      "juli",
+      "august",
+      "september",
+      "oktober",
+      "november",
+      "dezember",
+    ],
+  },
+  {
+    language: "french",
+    code: "fr",
+    months: [
+      "janvier",
+      "février",
+      "mars",
+      "avril",
+      "mai",
+      "juin",
+      "juillet",
+      "août",
+      "septembre",
+      "octobre",
+      "novembre",
+      "décembre",
+    ],
+  },
+];
+
+module.exports = {
+  MONTHS,
+};
