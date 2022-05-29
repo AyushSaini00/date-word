@@ -1,9 +1,8 @@
 "use strict";
 
-const MONTHS = [
-  {
+export const MONTHS = {
+  en: {
     language: "english",
-    code: "en",
     months: [
       "january",
       "february",
@@ -19,27 +18,8 @@ const MONTHS = [
       "december",
     ],
   },
-  {
-    language: "spanish",
-    code: "es",
-    months: [
-      "enero",
-      "febrero",
-      "marzo",
-      "abril",
-      "mayo",
-      "junio",
-      "julio",
-      "agosto",
-      "septiembre",
-      "octubre",
-      "noviembre",
-      "diciembre",
-    ],
-  },
-  {
+  de: {
     language: "german",
-    code: "de",
     months: [
       "januar",
       "februar",
@@ -55,9 +35,25 @@ const MONTHS = [
       "dezember",
     ],
   },
-  {
+  es: {
+    language: "spanish",
+    months: [
+      "enero",
+      "febrero",
+      "marzo",
+      "abril",
+      "mayo",
+      "junio",
+      "julio",
+      "agosto",
+      "septiembre",
+      "octubre",
+      "noviembre",
+      "diciembre",
+    ],
+  },
+  fr: {
     language: "french",
-    code: "fr",
     months: [
       "janvier",
       "février",
@@ -73,8 +69,4 @@ const MONTHS = [
       "décembre",
     ],
   },
-];
-
-module.exports = {
-  MONTHS,
 };
