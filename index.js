@@ -32,7 +32,7 @@ export default function dateWord(text, options) {
     let [day, month, year] = splitDate(text);
 
     month = monthFromXLangToYLang(month, options.is, options.to);
-    return new Date(`${day} ${month} ${year}`);
+    return new Date(`${day} ${month} ${year}`).toISOString();
   } catch (error) {
     // console.log(error)
     return "invalid date";
