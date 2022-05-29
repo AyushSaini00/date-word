@@ -10,29 +10,26 @@ npm install date-word
 
 ## usage
 
-```
-import dateWord from 'date-word';
+```js
+import dateWord from "date-word";
 
 dateWord(`18. Dezember 2021`, {
-    is: "de",
-    to: "en",
-})
+  is: "de",
+  to: "en",
+});
 // 18 december 2021
 
-
 dateWord(`18 décembre 2021`, {
-    is: "fr",
-    to: "es",
-})
+  is: "fr",
+  to: "es",
+});
 // 18 diciembre 2021
 
-
 dateWord(`18 décembre 2021`, {
-    is: "fr",
-    format: "isoString"
-})
+  is: "fr",
+  format: "isoString",
+});
 // 2021-12-17T18:30:00.000Z
-
 ```
 
 ## api
