@@ -10,7 +10,7 @@ function splitDate(text) {
     splitted[1].toLowerCase(),
     splitted[2],
   ];
-  return [day, month, year];
+  return [day.replace(/\D/g, ""), month, year.replace(/\D/g, "")];
 }
 
 function monthFromXLangToYLang(month, XLang, YLang) {
@@ -31,8 +31,13 @@ export default function dateWord(text, options) {
 
     let [day, month, year] = splitDate(text);
 
+    if (options.format === "isoString") {
+      month = monthFromXLangToYLang(month, options.is, "en");
+      return new Date(`${day} ${month} ${year}`).toISOString();
+    }
+
     month = monthFromXLangToYLang(month, options.is, options.to);
-    return new Date(`${day} ${month} ${year}`).toISOString();
+    return `${day} ${month} ${year}`;
   } catch (error) {
     // console.log(error)
     return "invalid date";
