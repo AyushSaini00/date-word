@@ -1,17 +1,10 @@
-// test cases
-
 import dateWord from "./index.js";
 
-// console.log(
-//   dateWord(`18. Dezember 2021`, {
-//     is: "de",
-//     to: "en",
-//   })
-// );
-
-console.log(
-  dateWord(`18 décembre 2021`, {
-    is: "fr",
-    format: "isoString",
-  })
-);
+test("returns date in other language", () => {
+  expect(
+    dateWord(`18 décembre 2021`, {
+      is: "fr",
+      to: "en",
+    })
+  ).toBe("18 december 2021");
+});

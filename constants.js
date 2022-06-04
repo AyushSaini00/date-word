@@ -69,4 +69,21 @@ export const MONTHS = {
       "décembre",
     ],
   },
+  it: {
+    language: "italian",
+    months: [
+      "gennaio",
+      "febbraio",
+      "marzo",
+      "aprile",
+      "maggio",
+      "giugno",
+      "luglio",
+      "agosto",
+      "settembre",
+      "ottobre",
+      "novembre",
+      "dicembre",
+    ],
+  },
 };
