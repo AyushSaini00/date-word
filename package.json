@@ -24,7 +24,6 @@
     "type": "git",
     "url": "git+https://github.com/AyushSaini00/date-word.git"
   },
-  "type": "module",
   "keywords": [
     "date",
     "date-word",

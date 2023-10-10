@@ -32,6 +32,10 @@ dateWord(`18 décembre 2021`, {
 // 2021-12-17T18:30:00.000Z
 ```
 
+### demo
+
+- [vanilla javascript demo](https://stackblitz.com/edit/date-word-package-demo?file=index.js)
+
 ## api
 
 - `dateWord(dateInput, options)`
